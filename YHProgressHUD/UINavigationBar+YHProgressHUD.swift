@@ -36,14 +36,14 @@ extension UINavigationController {
     func showWithStatus(status:String) {
         navigationBar.yhProgressHUD_NavBar.setStatusText(status)
         navigationBar.yhProgressHUD_NavBar.hidden = false;
-        UIView.animateWithDuration(YHProgressAnimationDuration, animations: {
+        UIView.animateWithDuration(YHProgressHUDAnimationDuration, animations: {
             self.navigationBar.yhProgressHUD_NavBar.frame = CGRect(x: 0, y: CGRectGetHeight(self.navigationBar.frame), width: YHProgressHUDScreenWidth, height: YHProgressHUDNavigationBarHeight)
         }) { (_) in
             
         }
     }
     
-    func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressDefaultStayDuration) {
+    func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWithStatus(status)
         performSelector(#selector(UINavigationController.dismiss), withObject: nil, afterDelay: duration)
     }

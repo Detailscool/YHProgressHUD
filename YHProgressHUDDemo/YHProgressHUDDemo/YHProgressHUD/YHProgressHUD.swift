@@ -22,7 +22,7 @@ class YHProgressHUD: NSObject {
     
     private class func show(finished:(Void -> Void)?) {
         showWindow.frame = CGRect(x: 0, y: -YHProgressHUDStatusBarHeight, width: YHProgressHUDScreenWidth,height: YHProgressHUDStatusBarHeight)
-        UIView.animateWithDuration(YHProgressAnimationDuration, animations: {
+        UIView.animateWithDuration(YHProgressHUDAnimationDuration, animations: {
             showWindow.hidden = false
             showWindow.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 20)
         }) { (_) in
@@ -33,7 +33,7 @@ class YHProgressHUD: NSObject {
     }
     
     class func dismiss() {
-        UIView.animateWithDuration(YHProgressAnimationDuration, animations: {
+        UIView.animateWithDuration(YHProgressHUDAnimationDuration, animations: {
             showWindow.frame = CGRect(x: 0, y: -YHProgressHUDStatusBarHeight, width: YHProgressHUDScreenWidth, height: YHProgressHUDStatusBarHeight)
         }) { (_) in
             showWindow.hidden = true
@@ -45,14 +45,14 @@ class YHProgressHUD: NSObject {
         show(nil)
     }
     
-    class func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressDefaultStayDuration) {
+    class func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
         show { () in
             performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration)
         }
     }
     
-    class func showErroWithStatus(status:String,duration:NSTimeInterval = YHProgressDefaultStayDuration) {
+    class func showErroWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
         show { () in
             performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration)
