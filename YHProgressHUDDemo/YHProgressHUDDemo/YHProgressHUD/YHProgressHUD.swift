@@ -20,15 +20,13 @@ class YHProgressHUD: NSObject {
         super.init()
     }
     
-    private class func show(finished:(Void -> Void)?) {
+    private class func show() {
         showWindow.frame = CGRect(x: 0, y: -YHProgressHUDStatusBarHeight, width: YHProgressHUDScreenWidth,height: YHProgressHUDStatusBarHeight)
         UIView.animateWithDuration(YHProgressHUDAnimationDuration, animations: {
             showWindow.hidden = false
             showWindow.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 20)
         }) { (_) in
-            if let _ = finished {
-                finished!()
-            }
+            
         }
     }
     
@@ -42,21 +40,17 @@ class YHProgressHUD: NSObject {
     
     class func showWithStatus(status:String) {
         showWindow.setStatusText(status)
-        show(nil)
+        show()
     }
     
     class func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
-        show { () in
-            performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration)
-        }
+        performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration+YHProgressHUDAnimationDuration)
     }
     
     class func showErroWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
-        show { () in
-            performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration)
-        }
+        performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration+YHProgressHUDAnimationDuration)
     }
     
     class func setStauts(textColor:UIColor = UIColor.whiteColor(),textBackground:UIColor = UIColor.blackColor(),textFont:UIFont = UIFont.systemFontOfSize(17)) {

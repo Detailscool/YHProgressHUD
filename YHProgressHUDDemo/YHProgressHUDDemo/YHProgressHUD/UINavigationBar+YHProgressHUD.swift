@@ -45,11 +45,11 @@ extension UINavigationController {
     
     func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWithStatus(status)
-        performSelector(#selector(UINavigationController.dismiss), withObject: nil, afterDelay: duration)
+        performSelector(#selector(UINavigationController.dismiss), withObject: nil, afterDelay: duration+YHProgressHUDAnimationDuration)
     }
     
     func dismiss() {
-        UIView.animateWithDuration(0.25, animations: { 
+        UIView.animateWithDuration(YHProgressHUDAnimationDuration, animations: {
             self.navigationBar.yhProgressHUD_NavBar.frame = CGRect(x: 0, y: -YHProgressHUDNavigationBarHeight, width: YHProgressHUDScreenWidth, height: YHProgressHUDNavigationBarHeight)
             }) { (_) in
              self.navigationBar.yhProgressHUD_NavBar.hidden = true;
