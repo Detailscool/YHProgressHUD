@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>YHProgressHUD.xcscheme</key>
+		<key>YHProgressHUDDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D05E8C481CEEA0530005D5CB</key>
+		<key>D0B5E4771D0134EE00ACA8AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

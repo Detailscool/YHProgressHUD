@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D05E8C481CEEA0530005D5CB"
-               BuildableName = "YHProgressHUD.app"
-               BlueprintName = "YHProgressHUD"
-               ReferencedContainer = "container:YHProgressHUD.xcodeproj">
+               BlueprintIdentifier = "D0B5E4771D0134EE00ACA8AB"
+               BuildableName = "YHProgressHUDDemo.app"
+               BlueprintName = "YHProgressHUDDemo"
+               ReferencedContainer = "container:YHProgressHUDDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D05E8C481CEEA0530005D5CB"
-            BuildableName = "YHProgressHUD.app"
-            BlueprintName = "YHProgressHUD"
-            ReferencedContainer = "container:YHProgressHUD.xcodeproj">
+            BlueprintIdentifier = "D0B5E4771D0134EE00ACA8AB"
+            BuildableName = "YHProgressHUDDemo.app"
+            BlueprintName = "YHProgressHUDDemo"
+            ReferencedContainer = "container:YHProgressHUDDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D05E8C481CEEA0530005D5CB"
-            BuildableName = "YHProgressHUD.app"
-            BlueprintName = "YHProgressHUD"
-            ReferencedContainer = "container:YHProgressHUD.xcodeproj">
+            BlueprintIdentifier = "D0B5E4771D0134EE00ACA8AB"
+            BuildableName = "YHProgressHUDDemo.app"
+            BlueprintName = "YHProgressHUDDemo"
+            ReferencedContainer = "container:YHProgressHUDDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D05E8C481CEEA0530005D5CB"
-            BuildableName = "YHProgressHUD.app"
-            BlueprintName = "YHProgressHUD"
-            ReferencedContainer = "container:YHProgressHUD.xcodeproj">
+            BlueprintIdentifier = "D0B5E4771D0134EE00ACA8AB"
+            BuildableName = "YHProgressHUDDemo.app"
+            BlueprintName = "YHProgressHUDDemo"
+            ReferencedContainer = "container:YHProgressHUDDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

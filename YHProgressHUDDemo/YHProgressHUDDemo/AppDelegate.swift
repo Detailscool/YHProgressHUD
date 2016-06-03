@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  YHProgressHUD
+//  YHProgressHUDDemo
 //
-//  Created by 陈波文 on 16/5/20.
+//  Created by Detailscool on 16/6/3.
 //  Copyright © 2016年 Detailscool. All rights reserved.
 //
 
