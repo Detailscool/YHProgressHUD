@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Detailscool/YHProgressHUD.git", :tag => s.version }
   s.social_media_url   = "http://www.jianshu.com/users/5a65c3921bda/top_articles"
   s.source_files  = "YHProgressHUD/*.{h,swift}"
-  s.resources    = "YHRefresh/YHRefresh.bundle"
+  s.resources    = "YHProgressHUD/YHProgressHUD.bundle"
   s.requires_arc = true
   s.platform     = :ios, "8.0"
   
