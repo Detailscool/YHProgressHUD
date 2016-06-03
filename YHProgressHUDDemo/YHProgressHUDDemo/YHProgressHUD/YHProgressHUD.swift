@@ -45,11 +45,13 @@ class YHProgressHUD: NSObject {
     
     class func showSuccessWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
+        show()
         performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration+YHProgressHUDAnimationDuration)
     }
     
     class func showErroWithStatus(status:String,duration:NSTimeInterval = YHProgressHUDDefaultStayDuration) {
         showWindow.setStatusText(status)
+        show()
         performSelector(#selector(YHProgressHUD.dismiss), withObject: nil, afterDelay: duration+YHProgressHUDAnimationDuration)
     }
     
